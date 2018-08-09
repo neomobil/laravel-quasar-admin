@@ -34,6 +34,7 @@
                                          v-model="password"
                                          @blur="$v.password.$touch()"
                                          @input="$v.password.$touch()"
+                                         type="password"
                                 />
                             </q-field>
                         </q-card-main>
