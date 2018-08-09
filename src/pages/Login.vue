@@ -13,7 +13,6 @@
                         <q-card-main>
                             <form>
                             <q-field
-                                    tabindex="-1"
                                     icon="account_box"
                                     helper="Email"
                                     :error="$v.email.$error"
