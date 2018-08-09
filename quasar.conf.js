@@ -22,7 +22,7 @@ module.exports = function (ctx) {
     build: {
       env: ctx.dev
         ? { // so on dev we'll have
-          API: JSON.stringify('http://local.test')
+          API: JSON.stringify('http://homestead.test')
         }
         : { // and on build (production):
           API: JSON.stringify('https://remote.com')

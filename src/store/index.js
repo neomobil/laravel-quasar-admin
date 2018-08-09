@@ -10,12 +10,13 @@ Vue.use(Vuex)
  * directly export the Store instantiation
  */
 
-export default function (/* { ssrContext } */) {
-  const Store = new Vuex.Store({
-    modules: {
-      base
-    }
-  })
+// export default function (/* { ssrContext } */) {
+const Store = new Vuex.Store({
+  modules: {
+    base
+  }
+})
 
-  return Store
-}
+// return Store
+export default Store
+// }

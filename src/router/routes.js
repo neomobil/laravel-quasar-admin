@@ -1,17 +1,24 @@
-
 const routes = [
   {
     path: '/',
     component: () => import('layouts/Login.vue'),
     children: [
-      { path: '', component: () => import('pages/Login.vue') }
+      {path: '', component: () => import('pages/Login.vue')}
     ]
   },
   {
     path: '/home',
+    beforeEnter: (to, from, next) => {
+      let loggedIn = localStorage.getItem('loggedIn')
+      if (loggedIn) {
+        next()
+      } else {
+        next('/')
+      }
+    },
     component: () => import('layouts/Base.vue'),
     children: [
-      { path: '', component: () => import('pages/Home.vue') }
+      {path: '', component: () => import('pages/Home.vue')}
     ]
   }
 ]
