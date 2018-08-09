@@ -73,9 +73,6 @@ export default {
     }
   },
   methods: {
-    focusEmail () {
-      this.$refs.email.$el.children[1].children[0].children[0].focus()
-    },
     submit () {
       const form = new FormData()
       form.append('username', this.email)
