@@ -98,6 +98,7 @@ export default {
               'Authorization': `Bearer ${this.$store.state.base.token}`
             }
           }).then(response => this.$store.commit('base/setUser', response.data.data))
+            .then(this.$router.push('/home'))
         })
         .catch(error => this.catch(error))
     }
