@@ -9,8 +9,9 @@ const routes = [
   {
     path: '/home',
     beforeEnter: (to, from, next) => {
-      let loggedIn = localStorage.getItem('loggedIn')
-      if (loggedIn) {
+      let loggedIn = JSON.parse(localStorage.getItem('loggedIn'))
+      console.log(loggedIn)
+      if (loggedIn === true) {
         next()
       } else {
         next('/')
