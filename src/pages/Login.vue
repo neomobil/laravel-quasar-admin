@@ -11,6 +11,7 @@
                             <span class="uppercase">Login</span>
                         </q-card-title>
                         <q-card-main>
+                            <form>
                             <q-field
                                     tabindex="-1"
                                     icon="account_box"
@@ -22,6 +23,7 @@
                                          v-model="email"
                                          @blur="$v.email.$touch()"
                                          autofocus
+                                         autocomplete
                                 />
                             </q-field>
                             <q-field class="q-mb-md"
@@ -35,8 +37,11 @@
                                          @blur="$v.password.$touch()"
                                          @input="$v.password.$touch()"
                                          type="password"
+                                         autocomplete
+                                         @keydown.enter="submit"
                                 />
                             </q-field>
+                            </form>
                         </q-card-main>
                         <q-card-separator/>
                         <q-card-actions>
