@@ -12,7 +12,7 @@
         <q-toolbar-title>
           <span class="q-headline uppercase">Backend</span>
         </q-toolbar-title>
-        <q-btn dense flat icon-right="mdi-logout" label="Logout"/>
+        <q-btn dense flat icon-right="mdi-logout" label="Logout" @click="logout"/>
       </q-toolbar>
     </q-layout-header>
     <q-page-container>
@@ -32,7 +32,11 @@ export default {
     }
   },
   methods: {
-    openURL
+    openURL,
+    logout () {
+      this.$store.commit('base/logout')
+      this.$router.push('/')
+    }
   }
 }
 </script>
