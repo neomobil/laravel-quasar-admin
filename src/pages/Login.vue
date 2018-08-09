@@ -23,6 +23,7 @@
                                          @blur="$v.email.$touch()"
                                          autofocus
                                          autocomplete
+                                         type="email"
                                 />
                             </q-field>
                             <q-field class="q-mb-md"
