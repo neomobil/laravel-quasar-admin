@@ -4,9 +4,15 @@
       <q-toolbar
         color="primary"
       >
+        <q-btn
+                flat round dense
+                icon="menu"
+                @click="leftDrawerOpen = !leftDrawerOpen"
+        />
         <q-toolbar-title>
           <span class="q-headline uppercase">Backend</span>
         </q-toolbar-title>
+        <q-btn dense flat icon-right="mdi-logout" label="Logout"/>
       </q-toolbar>
     </q-layout-header>
     <q-page-container>
