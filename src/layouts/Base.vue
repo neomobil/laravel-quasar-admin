@@ -42,7 +42,7 @@
     <q-layout-footer>
       <q-toolbar>
       <q-toolbar-title>
-        Layout Footer
+          {{$t('failed')}}
       </q-toolbar-title>
       </q-toolbar>
     </q-layout-footer>

@@ -3,6 +3,5 @@
 
 export default {
   failed: 'Action failed',
-  poweredBy: 'Powered by',
   success: 'Action was successful'
 }
