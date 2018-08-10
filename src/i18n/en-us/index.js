@@ -4,6 +4,7 @@
 export default {
   appName: 'Quaravel',
   failed: 'Action failed',
+  home: 'Home',
   poweredBy: 'Powered by',
   success: 'Action was successful'
 }
