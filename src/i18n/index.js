@@ -3,5 +3,5 @@ import deDE from './de-de'
 
 export default {
   'en-us': enUS,
-  'en-de': deDE
+  'de-de': deDE
 }
