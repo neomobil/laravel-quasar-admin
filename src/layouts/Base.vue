@@ -1,5 +1,5 @@
 <template>
-  <q-layout view="IHh Lpr fFr">
+  <q-layout view="hHh Lpr lFf">
     <q-layout-header>
       <q-toolbar
         color="primary"
@@ -10,7 +10,7 @@
                 @click="leftDrawerOpen = !leftDrawerOpen"
         />
         <q-toolbar-title>
-          <span class="q-headline uppercase">Backend</span>
+          <span class="q-headline uppercase">{{$t('appName')}}</span>
         </q-toolbar-title>
         <q-btn dense flat icon-right="mdi-logout" label="Logout" @click="logout"/>
       </q-toolbar>
@@ -40,9 +40,9 @@
       <router-view />
     </q-page-container>
     <q-layout-footer>
-      <q-toolbar>
+      <q-toolbar color="light" text-color="dark">
       <q-toolbar-title>
-          {{$t('failed')}}
+          {{$t('poweredBy')}}
       </q-toolbar-title>
       </q-toolbar>
     </q-layout-footer>

@@ -2,6 +2,7 @@
 // so you can safely delete all default props below
 
 export default {
+  appName: 'Quaravel',
   failed: 'Action failed',
   poweredBy: 'Powered by',
   success: 'Action was successful'
