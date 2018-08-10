@@ -6,5 +6,7 @@ export default {
   failed: 'Action failed',
   home: 'Home',
   poweredBy: 'Powered by',
-  success: 'Action was successful'
+  success: 'Action was successful',
+  users: 'Users',
+  user_menu_sublabel: 'User administration'
 }

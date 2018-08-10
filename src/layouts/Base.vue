@@ -16,23 +16,14 @@
       </q-toolbar>
     </q-layout-header>
     <q-layout-drawer side="left" v-model="leftDrawerOpen">
-      <q-list no-border link inset-separator>
-        <q-list-header>Essential Links</q-list-header>
-        <q-item to="/docs">
-          <q-item-side icon="school" />
-          <q-item-main label="Docs" sublabel="quasar-framework.org" />
+      <q-list no-border link>
+        <q-item to="/home">
+          <q-item-side icon="home" />
+          <q-item-main :label="$t('home')"/>
         </q-item>
-        <q-item to="/forum">
-          <q-item-side icon="record_voice_over" />
-          <q-item-main label="Forum" sublabel="forum.quasar-framework.org" />
-        </q-item>
-        <q-item to="/chat">
-          <q-item-side icon="chat" />
-          <q-item-main label="Discord Chat Channel" sublabel="https://discord.gg/5TDhbDg" />
-        </q-item>
-        <q-item to="/twitter">
-          <q-item-side icon="rss feed" />
-          <q-item-main label="Twitter" sublabel="@quasarframework" />
+        <q-item to="/users">
+          <q-item-side icon="people" />
+          <q-item-main :label="$t('users')" :sublabel="$t('user_menu_sublabel')" />
         </q-item>
       </q-list>
     </q-layout-drawer>
