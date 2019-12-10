@@ -3,7 +3,7 @@
 module.exports = function (ctx) {
   return {
     // app plugins (/src/plugins)
-    plugins: [
+    boot: [
       'i18n',
       'axios',
       'vuelidate'
@@ -12,11 +12,11 @@ module.exports = function (ctx) {
       'app.styl'
     ],
     extras: [
-      ctx.theme.mat ? 'roboto-font' : null,
+      'roboto-font',
       'material-icons', // optional, you are not bound to it
-      // 'ionicons',
-      'mdi'
-      // 'fontawesome'
+      // 'ionicons-v4',
+      'mdi-v3'
+      // 'fontawesome-v5'
     ],
     supportIE: true,
     build: {
@@ -84,8 +84,8 @@ module.exports = function (ctx) {
       plugins: [
         'Notify'
       ]
-      // iconSet: ctx.theme.mat ? 'material-icons' : 'ionicons'
-      // i18n: 'de' // Quasar language
+      // iconSet: 'material-icons'
+      // lang: 'de' // Quasar language
     },
     // animations: 'all' --- includes all animations
     animations: [],
